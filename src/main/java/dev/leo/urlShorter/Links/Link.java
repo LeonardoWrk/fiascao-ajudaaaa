@@ -11,14 +11,14 @@ public class Link {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
-    private String urlLong;
+    private String urlLonga;
     private String urlEncurtada;
     private String urlQrCode;
     private LocalDateTime urlCriadaEm;
 
-    public Link(Long id, String urlLong, String urlEncurtada, String urlQrCode, LocalDateTime urlCriadaEm) {
+    public Link(Long id, String urlLonga, String urlEncurtada, String urlQrCode, LocalDateTime urlCriadaEm) {
         this.id = id;
-        this.urlLong = urlLong;
+        this.urlLonga = urlLonga;
         this.urlEncurtada = urlEncurtada;
         this.urlQrCode = urlQrCode;
         this.urlCriadaEm = urlCriadaEm;
@@ -44,12 +44,12 @@ public class Link {
         this.id = id;
     }
 
-    public String getUrlLong() {
-        return urlLong;
+    public String getUrlLonga() {
+        return urlLonga;
     }
 
-    public void setUrlLong(String urlLong) {
-        this.urlLong = urlLong;
+    public void setUrlLonga(String urlLonga) {
+        this.urlLonga = urlLonga;
     }
 
     public String getUrlEncurtada() {
